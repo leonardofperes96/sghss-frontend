@@ -11,7 +11,7 @@ const Navigation = () => {
     <header className={styles.header}>
       <div className={styles.header_container}>
 
-        {/* Home só aparece se estiver logado */}
+       
         {data && (
           <NavLink className={styles.header_logo} to="/">
             <FaHospital />
@@ -21,7 +21,7 @@ const Navigation = () => {
         <nav className={styles.nav}>
           <ul className={styles.nav_list}>
 
-            {/* Login */}
+           
             {!data && (
               <li>
                 <NavLink
@@ -35,14 +35,14 @@ const Navigation = () => {
               </li>
             )}
 
-            {/* User */}
+            
             {data && (
               <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? styles.active : styles.nav_link
                   }
-                  to="/user"
+                  to="/perfil"
                 >
                   User
                 </NavLink>
