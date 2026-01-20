@@ -1,33 +1,36 @@
+# SGHSS – Sistema de Gestão Hospitalar e de Serviços de Saúde
 
-# ReactGram
+Projeto desenvolvido para a disciplina de Projeto Multidisciplinar,
+com foco em Frontend, conforme roteiro disponibilizado pelo professor.
 
-Uma aplicação responsiva que é uma rede social, onde é possivel postar fotos, hashtags, comentar fotos de outros usuários, com toda operação de CRUD. 
-Para autenticação de login e as operações de crud foi utilizado o firebase.
+## 📌 Descrição
+O SGHSS é um sistema web para gerenciamento de consultas médicas e pacientes,
+permitindo o cadastro, edição, visualização e controle de status das consultas.
 
+O sistema foi desenvolvido utilizando React no frontend e Firebase como Backend as a Service,
+realizando operações reais de CRUD, sem uso de dados mockados.
 
-## Funcionalidades
-* Criar um novo post com sua imagem, hashtags e conteúdo do post
-* Comentar o post de outros usuarios
-* Editar publicação
-* Deletar publicação
-* Integração com o firebase
+## 🚀 Funcionalidades
+- Autenticação de usuário (Firebase Auth)
+- Dashboard com indicadores de consultas e pacientes
+- Cadastro e edição de pacientes (com validação de CPF único)
+- Cadastro, edição e visualização de consultas
+- Regras de negócio para agendamento (intervalo mínimo de 30 minutos)
+- Controle de status da consulta (Agendada, Realizada, Cancelada)
+- Interface responsiva
 
-## Rodando Localmente
-### Clone o projeto
-git clone git@github.com:leonardofperes96/react-gram.git
+## 🛠️ Tecnologias Utilizadas
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Firebase (Auth + Firestore)
 
-### Entre no diretório do projeto frontend
-cd reactgram-app 
+## 📂 Estrutura do Projeto
+O projeto segue uma organização por páginas, componentes e hooks,
+facilitando a manutenção e futuras evoluções.
 
-### Instale as dependencias
-npm install
-
-### Inicie o servidor
-npm start
-
-
-## Stacks utilizadas
-* Frontend : React, Css
-* Backend: Firebase
-
-
+## ▶️ Execução do Projeto
+- navegar até a pasta do projeto cd sghss-app
+- npm install
+- npm start
