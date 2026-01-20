@@ -31,6 +31,6 @@ O projeto segue uma organização por páginas, componentes e hooks,
 facilitando a manutenção e futuras evoluções.
 
 ## ▶️ Execução do Projeto
-navegar até a pasta do projeto cd sghss-app
-npm install
-npm start
+- navegar até a pasta do projeto cd sghss-app
+- npm install
+- npm start
