@@ -1,0 +1,27 @@
+.card {
+  margin-left: 35px;
+  background: #2c7be5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.1s;
+}
+
+.card:hover {
+  background: #1a68d1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+.card:active {
+  transform: translateY(0);
+}

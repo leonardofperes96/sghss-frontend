@@ -1,0 +1,125 @@
+.login {
+  padding: 6em 1em;
+  background: #fafafa;
+  min-height: 80vh;
+}
+
+.login_img {
+  display: none;
+}
+
+.login_container {
+  max-width: 25rem;
+  background: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.login_form {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5em;
+}
+
+.form input {
+  display: block;
+  width: 70%;
+  margin-bottom: 1em;
+  padding: 0.75em 1em;
+  background: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  outline: #fb1;
+}
+
+.form input:focus {
+  border: 1px solid #fb1;
+  background: white;
+}
+
+button {
+  cursor: pointer;
+  width: 70%;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+}
+
+.form_btn {
+  border: 1px solid transparent;
+  color: black;
+  background: #fb1;
+}
+
+.google_btn {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.google_text {
+  max-width: 70%;
+  color: #8e8e8e;
+  margin: 1em auto;
+  position: relative;
+  font-weight: 400;
+}
+
+.google_text::before,
+.google_text::after {
+  content: "";
+  position: absolute;
+  height: 0.05em;
+  width: 30%;
+  background-color: #8e8e8e;
+  left: 0em;
+  top: 0.75em;
+}
+
+.google_text::after {
+  left: initial;
+  right: 0em;
+}
+
+
+.register_link {
+  color: #fb1;
+  font-weight: 700;
+  
+}
+
+@media (min-width: 600px) {
+  .login_container {
+    max-width: 50rem;
+    grid-template-columns: 1fr 0.25em 1fr;
+    gap: 1em;
+  }
+
+  .login_img {
+    background-image: url("../assets/premium.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    grid-column: 1/2;
+  }
+
+  .login_form {
+    grid-column: 3/4;
+  }
+}
